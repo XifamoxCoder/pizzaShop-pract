@@ -1,0 +1,40 @@
+.button {
+    color: var(--white-color);
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.25s;
+    border: none;
+    border-radius: 29px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.small {
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+.big {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 19px 59px;
+}
+
+.accent{
+    background: var(--primary-color);
+}
+
+.accent:hover  {
+    background: var(--primary-hover-color);
+}
+
+.button-big {
+    color: var(--white-color);
+    border-radius: 28px;
+    font-family: inherit;
+    background: var(--primary-color);
+    cursor: pointer;
+    transition: background 0.25s;
+    font-size: 16px;
+    border: none
+}

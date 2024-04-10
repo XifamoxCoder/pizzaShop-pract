@@ -1,0 +1,7 @@
+.image {
+    width: 82px;
+    height: 82px;
+    background-size: cover;
+    filter: drop-shadow(0 8px 25px rgba(224, 219, 196, 0.90));
+    border-radius: 20px;
+}
