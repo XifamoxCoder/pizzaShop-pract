@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Интернет-магазин еды
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это учебный пет-проект, созданный с использованием React, TypeScript и Redux. Он реализует функционал интернет-магазина еды, который позволяет пользователям просматривать меню, добавлять продукты в корзину, а также осуществлять авторизацию и регистрацию через JWT токен, связанный с бэкендом.
 
-Currently, two official plugins are available:
+## Основные функции
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Авторизация и регистрация:** Пользователи могут создать учетную запись или войти в систему, используя свой электронный адрес и пароль.
+- **Просмотр меню и добавление продуктов в корзину:** Пользователи могут просматривать доступные продукты и добавлять их в корзину. Цена продуктов суммируется в корзине.
+- **Подгрузка информации с бекенда:** Данные о продуктах и пользовательских учетных записях загружаются с бэкенда для обеспечения актуальности информации.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** Используется для создания пользовательского интерфейса и управления компонентами.
+- **Redux:** Используется для управления состоянием приложения, включая данные о продуктах, корзине и пользовательских учетных записях.
+- **TypeScript:** Применяется для добавления статической типизации к JavaScript, что способствует обнаружению ошибок на этапе разработки.
+- **JWT токены:** Для обеспечения безопасности и аутентификации пользователей используются JWT токены, связанные с бэкендом.
+- **ESLint:** Для стандартизации кода и обнаружения потенциальных проблем используется ESLint.
 
-- Configure the top-level `parserOptions` property like this:
+## Установка и запуск
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Для запуска проекта необходимо выполнить следующие шаги:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Убедитесь, что у вас установлен Node.js (рекомендуемая версия 20.x).
+2. Клонируйте репозиторий на локальную машину:
+
+   ```bash
+   git clone <URL репозитория>
+   ```
+   
+   ```bash
+   cd <название директории>
+   ```
+   
+   ```bash
+   npm install
+   ```
+   
+   ```bash
+   npm run dev
+   ```
